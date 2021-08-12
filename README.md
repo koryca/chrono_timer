@@ -1,10 +1,10 @@
 Readme file for chrono_timer demo program
 
-Purpose:
+# Purpose:
 chrono_timer is intended to demonstrate the use of the c++ std::chrono library
 for doing time measurement.
 
-Usage:
+# Usage:
 
 chrono_timer [secs]
 
@@ -17,7 +17,7 @@ The program will first measure the current time, then sleep() the indicated
 number of seconds, then measure the current time again, the compute
 and print the difference in time.
 
-Build instructions:
+# Build instructions:
 
 % cd chrono_timer     # contains the source file and CMakeLists.txt file
 
