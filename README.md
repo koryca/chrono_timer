@@ -20,9 +20,13 @@ and print the difference in time.
 Build instructions:
 
 % cd chrono_timer   // contains the source file and CMakeLists.txt file
+
 % mkdir build
+
 % cd build
+
 % cmake ../         // cmake generates lots of output
+
 % make              // to build the program
 
 # EOF
