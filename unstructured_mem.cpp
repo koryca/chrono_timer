@@ -23,7 +23,7 @@ main (int ac, char *av[])
     std::vector<unsigned long long> container;
     
     for(unsigned int i=0; i<iteration;i++){
-        container.push_back(lrand48() % iteration);
+        container.push_back(rand() % iteration);
     }
 
     // std::cout << "Going to sleep for " << sleep_secs << " seconds " << std::endl;
