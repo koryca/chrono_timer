@@ -22,5 +22,6 @@ set(CMAKE_BUILD_TYPE "Release")
 # -O0 is no optimization in gcc/g++
 #set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O0")
  
-add_executable (chrono_timer chrono_timer.cpp)
-
+add_executable (computing_sum computing_sum.cpp)
+add_executable (structured_mem structured_mem.cpp)
+add_executable (unstructured_mem unstructured_mem.cpp)

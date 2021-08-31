@@ -7,22 +7,33 @@
 //
 
 #include <iostream>
+#include <vector> 
 #include <chrono>
 #include <unistd.h>
 
 int
 main (int ac, char *av[])
 {
-    int sleep_secs = 2; // default sleep for 2 secs
+    // int sleep_secs = 2; // default sleep for 2 secs
+    int iteration = 0, sum = 0;
 
     if (ac > 1)  // if user entered a value after the prog name, parse it
-        sleep_secs = std::atoi(av[1]);
+        iteration = std::atoi(av[1]);
 
-    std::cout << "Going to sleep for " << sleep_secs << " seconds " << std::endl;
+    for(unsigned int i=0; i<iteration;i++){
+        containter.push_back(lrand48() % iteration);
+    }
+
+    // std::cout << "Going to sleep for " << sleep_secs << " seconds " << std::endl;
+    unsigned long long ptr = 0;
 
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
-    sleep(sleep_secs);
+    // sleep(sleep_secs);
+    for(unsigned int j=0; j<container.size();j++){
+        sum += container.at(ptr);
+        ptr = container.at(ptr);
+    }
 
     std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();
 
