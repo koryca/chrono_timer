@@ -20,8 +20,10 @@ main (int ac, char *av[])
     if (ac > 1)  // if user entered a value after the prog name, parse it
         iteration = std::atoi(av[1]);
 
+    std::vector<unsigned long long> container;
+    
     for(unsigned int i=0; i<iteration;i++){
-        containter.push_back(lrand48() % iteration);
+        container.push_back(lrand48() % iteration);
     }
 
     // std::cout << "Going to sleep for " << sleep_secs << " seconds " << std::endl;

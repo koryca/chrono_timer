@@ -22,10 +22,10 @@ main (int ac, char *av[])
 
     // std::cout << "Going to sleep for " << sleep_secs << " seconds " << std::endl;
 
-    std::vector<unsigned long long> containter;
+    std::vector<unsigned long long> container;
 
     for(unsigned int i=0; i<iteration;i++){
-        containter.push_back(i);
+        container.push_back(i);
     }
 
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();

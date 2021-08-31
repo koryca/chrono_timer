@@ -1,5 +1,0 @@
-C:/Users/koryz/OneDrive/Desktop/csc746/chrono_timer/build/CMakeFiles/computing_sum.dir
-C:/Users/koryz/OneDrive/Desktop/csc746/chrono_timer/build/CMakeFiles/edit_cache.dir
-C:/Users/koryz/OneDrive/Desktop/csc746/chrono_timer/build/CMakeFiles/structured_mem.dir
-C:/Users/koryz/OneDrive/Desktop/csc746/chrono_timer/build/CMakeFiles/unstructured_mem.dir
-C:/Users/koryz/OneDrive/Desktop/csc746/chrono_timer/build/CMakeFiles/rebuild_cache.dir
