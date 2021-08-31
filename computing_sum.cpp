@@ -13,18 +13,14 @@
 int
 main (int ac, char *av[])
 {
-    // int sleep_secs = 2; // default sleep for 2 secs
-    unsigned int iteration = 0, sum = 0;
+    unsigned long long iteration = 0, sum = 0;
 
     if (ac > 1)  // if user entered a value after the prog name, parse it
         iteration = std::atoi(av[1]);
 
-    // std::cout << "Going to sleep for " << sleep_secs << " seconds " << std::endl;
-
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
-    // sleep(sleep_secs);
-    for(unsigned int i=0; i<iteration;i++){
+    for(unsigned long long i=0; i<iteration;i++){
         sum += i;
     }
 
@@ -32,7 +28,7 @@ main (int ac, char *av[])
 
     std::chrono::duration<double> elapsed = end_time - start_time;
 
-    std::cout << " Elapsed time is : " << elapsed.count() << " " << std::endl;
+    std::cout << " Elapsed time is : " << elapsed.count() << " sum of " << iteration << " iteration is " << sum << std::endl;
     return 1;
 }
 
