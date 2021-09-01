@@ -11,7 +11,7 @@
 #include <chrono>
 #include <unistd.h>
 
-void
+int
 main (int ac, char *av[])
 {
     unsigned long long iteration = 0, sum = 0;
@@ -36,6 +36,6 @@ main (int ac, char *av[])
     std::chrono::duration<double> elapsed = end_time - start_time;
 
     std::cout << " Elapsed time is : " << elapsed.count() << " sum of " << iteration << " iteration is " << sum << std::endl;
-    // return 1;
+    return 0;
 }
 

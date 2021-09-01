@@ -11,7 +11,7 @@
 #include <chrono>
 #include <unistd.h>
 
-void
+int
 main (int ac, char *av[])
 {
     // int sleep_secs = 2; // default sleep for 2 secs
@@ -42,6 +42,6 @@ main (int ac, char *av[])
     std::chrono::duration<double> elapsed = end_time - start_time;
 
     std::cout << " Elapsed time is : " << elapsed.count() << " sum of " << iteration << " iteration is " << sum << std::endl;
-    // return 1;
+    return 0;
 }
 
