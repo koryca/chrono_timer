@@ -5,9 +5,9 @@ This homework is intended to study the measurement of FLOPs/sec and memory acces
 
 # Usage:
 
-./computing_sum [iteration]
-./structured_mem [iteration]
-./unstructured_mem [iteration]
+srun ./computing_sum [iteration]
+srun ./structured_mem [iteration]
+srun ./unstructured_mem [iteration]
 
 If the user gives an argument "iteration" on the command line,
 the program will use that value, interpreted as an integer, and calculate a summation number up to "iteration" times.
