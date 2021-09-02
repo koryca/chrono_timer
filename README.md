@@ -6,6 +6,7 @@ This homework is intended to study the measurement of FLOPs/sec and memory acces
 # Usage:
 
 srun ./computing_sum [iteration]
+srun ./computing_sum_hardcoded
 srun ./structured_mem [iteration]
 srun ./unstructured_mem [iteration]
 
