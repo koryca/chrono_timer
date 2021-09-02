@@ -25,6 +25,9 @@ main (int ac, char *av[])
 
     std::chrono::duration<double> elapsed1 = end_time1 - start_time1;
 
+    std::cout.precision(15);
+    std::cout << std::fixed;
+
     std::cout << " Elapsed time for 100000 is : " << elapsed1.count() << " sum is : " << sum << std::endl;
 
     sum = 0;
