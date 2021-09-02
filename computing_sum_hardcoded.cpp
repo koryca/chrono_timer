@@ -45,7 +45,6 @@ main (int ac, char *av[])
 
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
-    // sleep(sleep_secs);
     for(unsigned int i=0; i<1000000;i++){
         sum += i;
     }
@@ -60,7 +59,6 @@ main (int ac, char *av[])
 
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
-    // sleep(sleep_secs);
     for(unsigned int i=0; i<5000000;i++){
         sum += i;
     }
@@ -75,7 +73,6 @@ main (int ac, char *av[])
 
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
-    // sleep(sleep_secs);
     for(unsigned int i=0; i<10000000;i++){
         sum += i;
     }
@@ -90,7 +87,6 @@ main (int ac, char *av[])
 
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
-    // sleep(sleep_secs);
     for(unsigned int i=0; i<50000000;i++){
         sum += i;
     }
@@ -105,7 +101,6 @@ main (int ac, char *av[])
 
     std::chrono::time_point<std::chrono::high_resolution_clock> start_time = std::chrono::high_resolution_clock::now();
 
-    // sleep(sleep_secs);
     for(unsigned int i=0; i<100000000;i++){
         sum += i;
     }
@@ -130,6 +125,6 @@ main (int ac, char *av[])
     std::chrono::duration<double> elapsed = end_time - start_time;
 
     std::cout << " Elapsed time for 500000000 is : " << elapsed.count() << " sum is : " << sum << std::endl;
-    return 1;
+    return 0;
 }
 
